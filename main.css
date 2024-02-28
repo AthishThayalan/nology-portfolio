@@ -32,11 +32,23 @@ h1 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 24px;
+  letter-spacing: 0.04em;
+}
+
 .content__img {
   margin-top: 45px;
   height: 412px;
   width: 300px;
 }
 .content__description {
+  margin-top: 40px;
+}
+.content__technical {
+  margin-top: 80px;
+  text-align: center;
+}
+.content__technical p {
   margin-top: 40px;
 }/*# sourceMappingURL=main.css.map */
