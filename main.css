@@ -1,1 +1,30 @@
-/*# sourceMappingURL=main.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+header {
+  padding: 70px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 50px;
+  font-size: 48px;
+}/*# sourceMappingURL=main.css.map */
