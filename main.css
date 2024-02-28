@@ -12,7 +12,6 @@ body {
 
 header {
   padding: 70px;
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,8 +32,13 @@ h1 {
 }
 
 h3 {
-  font-size: 24px;
-  letter-spacing: 0.04em;
+  font-size: 28px;
+  letter-spacing: 0.02em;
+}
+
+h4 {
+  font-size: 15px;
+  font-weight: 400;
 }
 
 .content__img {
@@ -51,4 +55,19 @@ h3 {
 }
 .content__technical p {
   margin-top: 40px;
+}
+.content__technical-grid {
+  border: 1px solid red;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+.content__technology {
+  margin-bottom: 30px;
+}
+.content__technology img {
+  max-width: 40px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */
