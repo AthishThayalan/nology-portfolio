@@ -169,5 +169,16 @@ h6 {
       color: variables.$primary-color;
       font-size: 15px;
     }
+    .content {
+      display: flex;
+      align-items: flex-start;
+      &__img {
+        order: -1;
+      }
+      &__description {
+        flex: 1;
+        margin-top: 0;
+      }
+    }
   }
 }

@@ -199,6 +199,17 @@ h6 {
   color: #c2ad96;
   font-size: 15px;
 }
+.content .footer .content {
+  display: flex;
+  align-items: flex-start;
+}
+.content .footer .content__img {
+  order: -1;
+}
+.content .footer .content__description {
+  flex: 1;
+  margin-top: 0;
+}
 
 @media screen and (min-width: 768px) {
   .nav {
@@ -217,7 +228,7 @@ h6 {
     border-radius: 10px;
   }
   .nav__item:hover {
-    border: 1px solid #333;
+    border: 2px solid #333;
     transform: scale(1.1);
   }
   .header {
@@ -235,5 +246,16 @@ h6 {
   }
   .header__img {
     display: flex;
+  }
+  .content__technical-grid {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .content .projects {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=main.css.map */
