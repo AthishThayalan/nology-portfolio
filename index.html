@@ -20,7 +20,7 @@
     </nav>
     <header class="header">
       <div class="header__welcome">
-        <p>👋 Hey! I’m Athish Thayalan</p>
+        <p>👋 Hey! I’m <span class="auto-type"></span></p>
         <h1>A Junior Software Developer based in the UK.</h1>
       </div>
       <div class="header__img">
@@ -178,5 +178,14 @@
         <p class="footer__email">tathish@hotmail.co.uk</p>
       </footer>
     </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let typed = new Typed(".auto-type", {
+        strings: ["Athish Thayalan.", "Sleeping.", "Coding.", "Eating."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+    </script>
   </body>
 </html>
