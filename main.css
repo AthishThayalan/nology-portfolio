@@ -73,7 +73,7 @@ h6 {
   margin-bottom: 70px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
+  gap: 15;
   text-align: center;
 }
 .content__technology {
@@ -154,4 +154,31 @@ h6 {
 }
 .content .projects__card-button:hover {
   background-color: #555;
+}
+.content .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  width: 120%;
+  height: 150px;
+  text-align: center;
+  font-size: 10px;
+}
+.content .footer__icons {
+  background-color: #333;
+}
+.content .footer__icon {
+  background-color: #333;
+  width: 40px;
+  margin-right: 10px;
+}
+.content .footer__email {
+  margin-top: 10px;
+  font-family: "poppins";
+  background-color: #333;
+  color: #c2ad96;
+  font-size: 15px;
 }/*# sourceMappingURL=main.css.map */

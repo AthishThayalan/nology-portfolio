@@ -39,7 +39,7 @@ h6 {
     margin-bottom: 70px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    gap: 15;
     text-align: center;
   }
   &__technology {
@@ -55,6 +55,7 @@ h6 {
   }
   .projects {
     text-align: center;
+
     &__card {
       width: 330px;
       height: 650px;
@@ -122,6 +123,33 @@ h6 {
       &:hover {
         background-color: #555;
       }
+    }
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    width: 120%;
+    height: 150px;
+    text-align: center;
+    font-size: 10px;
+    &__icons {
+      background-color: #333;
+    }
+    &__icon {
+      background-color: #333;
+      width: 40px;
+      margin-right: 10px;
+    }
+    &__email {
+      margin-top: 10px;
+      font-family: "poppins";
+      background-color: #333;
+      color: variables.$primary-color;
+      font-size: 15px;
     }
   }
 }
