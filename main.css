@@ -86,7 +86,8 @@ h6 {
   text-align: center;
 }
 .content .projects__card {
-  width: 300px;
+  border: 2px solid red;
+  width: 290px;
   height: 500px;
 }
 .content .projects__card-img {
@@ -105,11 +106,22 @@ h6 {
   text-align: left;
   font-size: 13px;
   margin-bottom: 20px;
-  overflow: hidden;
   text-overflow: ellipsis;
 }
 .content .projects__title {
   margin: 10px;
   font-size: 30px;
   text-align: left;
+}
+.content .projects__card-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.content .projects__card-button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

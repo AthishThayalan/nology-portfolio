@@ -51,7 +51,8 @@ h6 {
   .projects {
     text-align: center;
     &__card {
-      width: 300px;
+      border: 2px solid red;
+      width: 290px;
       height: 500px;
     }
     &__card-img {
@@ -70,7 +71,7 @@ h6 {
         text-align: left;
         font-size: 13px;
         margin-bottom: 20px;
-        overflow: hidden;
+
         text-overflow: ellipsis;
       }
     }
@@ -78,6 +79,18 @@ h6 {
       margin: 10px;
       font-size: 30px;
       text-align: left;
+    }
+    &__card-buttons {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__card-button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
   }
 }
