@@ -47,19 +47,22 @@ h4 {
 
 h6 {
   font-size: 28px;
+  margin-bottom: 25px;
 }
 
 .content__img {
   margin-top: 45px;
   height: 412px;
-  width: 300px;
+  width: 280px;
 }
 .content__description {
   margin-top: 40px;
+  padding-left: 2px;
 }
 .content__technical {
   margin-top: 80px;
   text-align: center;
+  font-weight: 700;
 }
 .content__technical p {
   margin-top: 40px;
@@ -79,59 +82,34 @@ h6 {
   max-width: 50px;
   margin-bottom: 15px;
 }
-
-.card {
-  background-color: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 250px;
-  margin: 0 auto;
-  overflow: hidden;
-  transition: transform 0.3s ease;
-  cursor: pointer;
+.content .projects {
+  text-align: center;
 }
-.card:hover {
-  transform: translateY(-5px);
+.content .projects__card {
+  width: 300px;
+  height: 500px;
 }
-.card__image {
+.content .projects__card-img {
   width: 100%;
-  height: auto;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
+  height: 50%;
 }
-.card__content {
+.content .projects__card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 10px;
+  overflow: hidden;
+  max-height: 50%;
 }
-.card__title {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #333333;
+.content .projects__card-details p {
+  text-align: left;
+  font-size: 13px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.card__description {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  color: #666666;
-  font-size: 12px;
-}
-.card__button {
-  display: inline-block;
-  padding: 8px 16px;
-  text-decoration: none;
-  margin-right: 5px;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
-}
-.card__button--book {
-  background-color: #0066ff;
-  color: #ffffff;
-}
-.card__button--book:hover {
-  background-color: #0052cc;
-}
-.card__button--info {
-  background-color: #ff9900;
-  color: #ffffff;
-}
-.card__button--info:hover {
-  background-color: #cc7a00;
+.content .projects__title {
+  margin: 10px;
+  font-size: 30px;
+  text-align: left;
 }/*# sourceMappingURL=main.css.map */
