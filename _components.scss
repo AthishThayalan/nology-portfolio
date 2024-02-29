@@ -51,13 +51,20 @@ h6 {
   .projects {
     text-align: center;
     &__card {
-      border: 2px solid red;
-      width: 290px;
-      height: 500px;
+      width: 330px;
+      height: 650px;
+      margin-top: 30px;
+      border: 2px solid transparent;
+      transition: border-color 0.3s;
+
+      &:hover {
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+      }
     }
     &__card-img {
       width: 100%;
       height: 50%;
+      border-radius: 10px;
     }
 
     &__card-details {
@@ -66,12 +73,12 @@ h6 {
       align-items: flex-start;
       padding: 10px;
       overflow: hidden;
-      max-height: 50%;
+      height: 325px;
+
       p {
         text-align: left;
         font-size: 13px;
-        margin-bottom: 20px;
-
+        margin-bottom: 10px;
         text-overflow: ellipsis;
       }
     }
@@ -82,15 +89,18 @@ h6 {
     }
     &__card-buttons {
       display: flex;
-      justify-content: space-around;
     }
     &__card-button {
+      justify-self: flex-end;
       padding: 10px 20px;
       background-color: #333;
       color: white;
       border: none;
       border-radius: 5px;
       cursor: pointer;
+      &:hover {
+        background-color: #555;
+      }
     }
   }
 }
