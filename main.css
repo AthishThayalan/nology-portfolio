@@ -51,6 +51,14 @@ h6 {
   margin-bottom: 25px;
 }
 
+.nav {
+  display: none;
+}
+
+.header__img {
+  display: none;
+}
+
 .content__img {
   margin-top: 45px;
   height: 412px;
@@ -90,10 +98,13 @@ h6 {
 }
 .content .projects {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .content .projects__card {
   width: 330px;
-  height: 650px;
+  height: 690px;
   margin-top: 30px;
   margin-bottom: 90px;
   border-radius: 10px;
@@ -117,7 +128,7 @@ h6 {
   justify-content: space-between;
   padding: 10px;
   overflow: hidden;
-  height: 325px;
+  height: 340px;
 }
 .content .projects__card-details p {
   text-align: left;
@@ -187,4 +198,42 @@ h6 {
   background-color: #333;
   color: #c2ad96;
   font-size: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav {
+    padding: 30px 70px 30px 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+  }
+  .nav__item {
+    padding: 5px;
+    border-radius: 10px;
+  }
+  .nav__item:hover {
+    border: 1px solid #333;
+    transform: scale(1.1);
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px dotted black;
+  }
+  .header__welcome {
+    width: 60%;
+  }
+  .header p {
+    font-size: 25px;
+  }
+  .header__img {
+    display: flex;
+  }
 }/*# sourceMappingURL=main.css.map */
