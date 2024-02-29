@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "poppins";
   font-weight: 400;
 }
 
@@ -79,9 +79,10 @@ h6 {
 .content__technology {
   border-radius: 10px;
   margin-bottom: 12px;
+  transition: transform 0.3s;
 }
 .content__technology:hover {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 .content__technology img {
   max-width: 50px;
@@ -101,6 +102,7 @@ h6 {
 }
 .content .projects__card:hover {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
 }
 .content .projects__card-img {
   width: 100%;
@@ -173,7 +175,11 @@ h6 {
 .content .footer__icon {
   background-color: #333;
   width: 40px;
+  transition: transform 0.3s;
   margin-right: 10px;
+}
+.content .footer__icon:hover {
+  transform: scale(1.1);
 }
 .content .footer__email {
   margin-top: 10px;
