@@ -21,7 +21,9 @@
     <header class="header">
       <div class="header__welcome">
         <p>👋 Hey! I’m <span class="auto-type"></span></p>
-        <h1>A Junior Software Developer based in the UK.</h1>
+        <h1 class="auto-type-h1">
+          A Junior Software Developer based in the UK.
+        </h1>
       </div>
       <div class="header__img">
         <img src="./assets/computer-dude.svg" alt="" />
@@ -185,6 +187,12 @@
         typeSpeed: 150,
         backSpeed: 150,
         loop: true,
+      });
+      let typedH1 = new Typed(".auto-type-h1", {
+        strings: ["A Junior Software Developer based in the UK."],
+        typeSpeed: 50,
+        backSpeed: 0,
+        loop: false,
       });
     </script>
   </body>
