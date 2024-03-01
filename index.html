@@ -12,10 +12,10 @@
     <nav class="nav">
       <h6 class="nav__header">Athish Thayalan 🥸</h6>
       <div class="nav__items">
-        <div class="nav__item">Home</div>
-        <div class="nav__item">About</div>
-        <div class="nav__item">Projects</div>
-        <div class="nav__item">Get in touch</div>
+        <a href="./index.html" class="nav__item">Home</a>
+        <a href="#about" class="nav__item">About</a>
+        <a href="#projects" class="nav__item">Projects</a>
+        <a href="#contact" class="nav__item">Get in touch</a>
       </div>
     </nav>
     <header class="header">
@@ -30,35 +30,44 @@
       </div>
     </header>
     <main class="content">
-      <h2 class="main__h2">About me</h2>
+      <h2 class="main__h2" id="about">About me</h2>
       <img src="./assets/me-cropped.jpg" alt="Me" class="content__img" />
       <section class="content__description">
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis
-          earum non delectus placeat quod corporis optio itaque consequatur
-          sequi architecto voluptate magni voluptatum ab dicta, ex illum porro!
-          Dolores, molestiae. Lorem ipsum dolor, sit amet consectetur
-          adipisicing elit. Voluptas, unde porro consectetur illum nostrum aut
-          quibusdam explicabo iusto sequi totam maxime nobis voluptatem dolorem
-          eligendi maiores vitae quia. Illo, necessitatibus?
+          I'm Athish Thayalan, a graduate from the University of Nottingham with
+          a knack for numbers and a passion for coding. With a degree in
+          Mathematics and Economics, I've dived deep into the world of
+          mathematical modeling, statistics, and data analysis, especially in
+          economics. But hey, I'm not just about crunching numbers—I'm all about
+          using them to build cool stuff in tech! During my stint at MHA as an
+          Audit and Accounts Junior, I didn't just stare at spreadsheets all
+          day. I built solid relationships with clients, helped whip up
+          financial statements, and even got my hands dirty with audits. Then,
+          over at Vanclaron CIC, I wore the hat of a Finance and Grants Officer,
+          where I mastered the art of grant applications and organized some
+          pretty fun fundraising events.
         </p>
         <br />
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis sit
-          autem quo consectetur. Aut reprehenderit rerum pariatur voluptas magni
-          eius ipsum veniam debitis obcaecati provident, blanditiis odio ratione
-          vel temporibus. Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Laboriosam sint alias voluptatem quos? Dolor adipisci vel
-          eligendi culpa exercitationem iste voluptate incidunt quaerat tempora!
-          Non quidem dolorem voluptates impedit fugit.
+          Oh, did I mention my passion for coding? In addition to my
+          professional experience, I've embarked on numerous personal projects,
+          diving deep into computer science fundamentals, mastering data
+          structures, and algorithms.
+        </p>
+        <br />
+        <p>
+          But it's not all work and no play! Back in high school, I was the
+          go-to guy for math help, tutoring my peers and seeing their grades
+          soar. And when I'm not buried in code or numbers, you'll probably find
+          me at the gym, turning those coffee-fueled ideas into reality.
+          Speaking of coffee, let's grab one and chat about how I can bring my
+          passion for problem-solving and learning to your team as a software
+          developer. I'm ready to dive in and make a difference!
         </p>
       </section>
       <section class="content__technical">
         <h3>Technical Skills</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta,
-          alias consequuntur. Perferendis aperiam quasi sed quasi.
-        </p>
+        <p>My skill set includes but is not limited to :</p>
         <div class="content__technical-grid">
           <div class="content__technology">
             <!-- Spring Boot  -->
@@ -107,7 +116,7 @@
           </div>
         </div>
       </section>
-      <h6>My Projects</h6>
+      <h6 id="projects">My Projects</h6>
       <section class="projects">
         <div class="projects__card">
           <img
@@ -170,11 +179,27 @@
         </div>
       </section>
 
-      <footer class="footer">
+      <footer class="footer" id="contact">
         <div class="footer__icons">
-          <img src="./assets/github.svg.svg" alt="" class="footer__icon" />
-          <img src="./assets/linkedin.svg.svg" alt="" class="footer__icon" />
-          <img src="./assets/cv.svg.svg" alt="" class="footer__icon" />
+          <a href="your-github-url-here" target="_blank">
+            <img
+              src="./assets/github.svg.svg"
+              alt="GitHub"
+              class="footer__icon"
+            />
+          </a>
+
+          <a href="your-linkedin-url-here" target="_blank">
+            <img
+              src="./assets/linkedin.svg.svg"
+              alt="LinkedIn"
+              class="footer__icon"
+            />
+          </a>
+
+          <a href="your-cv-url-here" target="_blank">
+            <img src="./assets/cv.svg.svg" alt="CV" class="footer__icon" />
+          </a>
         </div>
 
         <p class="footer__email">tathish@hotmail.co.uk</p>
@@ -183,7 +208,7 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       let typed = new Typed(".auto-type", {
-        strings: ["Athish Thayalan.", "Sleeping.", "Coding.", "Eating."],
+        strings: ["Athish.", "Sleeping.", "Coding.", "Eating."],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true,
