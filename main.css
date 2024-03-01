@@ -267,7 +267,6 @@ h6 {
     align-items: center;
   }
   .content__technical-grid {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     padding-left: 60px;
