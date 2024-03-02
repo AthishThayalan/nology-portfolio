@@ -26,46 +26,23 @@
         </h1>
       </div>
       <div class="header__img">
-        <img src="./assets/computer-dude.svg" alt="" />
+        <img src="./assets/computer-dude.svg" alt="" class="text-animate" />
       </div>
     </header>
     <main class="content">
-      <h2 class="main__h2" id="about">About me</h2>
-      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img" />
+      <div class="content__container">
+        <h2 class="content__h2 scroll-reveal" id="about">About me</h2>
+      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img scroll-reveal" />
       <section class="content__description">
-        <p>
-          I'm Athish Thayalan, a graduate from the University of Nottingham with
-          a knack for numbers and a passion for coding. With a degree in
-          Mathematics and Economics, I've dived deep into the world of
-          mathematical modeling, statistics, and data analysis, especially in
-          economics. But hey, I'm not just about crunching numbers—I'm all about
-          using them to build cool stuff in tech! During my stint at MHA as an
-          Audit and Accounts Junior, I didn't just stare at spreadsheets all
-          day. I built solid relationships with clients, helped whip up
-          financial statements, and even got my hands dirty with audits. Then,
-          over at Vanclaron CIC, I wore the hat of a Finance and Grants Officer,
-          where I mastered the art of grant applications and organized some
-          pretty fun fundraising events.
-        </p>
-        <br />
-        <p>
-          Oh, did I mention my passion for coding? In addition to my
-          professional experience, I've embarked on numerous personal projects,
-          diving deep into computer science fundamentals, mastering data
-          structures, and algorithms.
-        </p>
-        <br />
-        <p>
-          But it's not all work and no play! Back in high school, I was the
-          go-to guy for math help, tutoring my peers and seeing their grades
-          soar. And when I'm not buried in code or numbers, you'll probably find
-          me at the gym, turning those coffee-fueled ideas into reality.
-          Speaking of coffee, let's grab one and chat about how I can bring my
-          passion for problem-solving and learning to your team as a software
-          developer. I'm ready to dive in and make a difference!
-        </p>
+        <h2 class="content__h2--desktop scroll-reveal">About me</h2>
+        <p class ="scroll-reveal" >I'm Athish Thayalan, a First Class, University of Nottingham graduate with a degree in Mathematics and Economics. With the Economics half having a focus on mathematical modeling, statistics, and data analysis, has ignited my passion for coding. Beyond crunching numbers, I thrive on leveraging them to create innovative tech solutions.</p>
+
+  
+
+      </div>
+      
       </section>
-      <section class="content__technical">
+      <section class="content__technical scroll-reveal">
         <h3>Technical Skills</h3>
         <p>My skill set includes but is not limited to :</p>
         <div class="content__technical-grid">
@@ -117,8 +94,8 @@
         </div>
       </section>
       <h6 id="projects">My Projects</h6>
-      <section class="projects">
-        <div class="projects__card">
+      <section class="projects scroll-reveal">
+        <div class="projects__card ">
           <img
             src="./assets/yelpcamp.png"
             alt="sorting-algo"
@@ -149,7 +126,7 @@
           />
           <div class="projects__card-details">
             <h7 class="projects__title">Sorting Algorithm Visualiser</h7>
-            <p>
+            <p >
               Welcome to the Sorting Algorithm Visualizer, your interactive
               platform for exploring and understanding various sorting
               algorithms. Whether you're a seasoned developer or a newcomer to
@@ -177,6 +154,7 @@
             </div>
           </div>
         </div>
+        
       </section>
 
       <footer class="footer" id="contact">
@@ -209,6 +187,7 @@
         >
       </footer>
     </main>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
       let typed = new Typed(".auto-type", {
@@ -222,6 +201,21 @@
         typeSpeed: 50,
         backSpeed: 0,
         loop: false,
+      });
+      ScrollReveal().reveal('.scroll-reveal', {
+        delay: 200,
+        distance: '50px',
+        duration: 1000,
+        easing: 'ease-in-out',
+        origin: 'bottom',
+        reset: true
+      });
+      ScrollReveal().reveal('.text-animate', {
+        origin: 'right',
+        distance: '100px',
+        duration: 1000,
+        delay: 200, 
+        easing: 'ease-in-out', 
       });
     </script>
   </body>

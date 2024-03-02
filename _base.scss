@@ -1,7 +1,7 @@
 @use "variables";
 * {
-  background-color: #e6d7c7;
-  color: #704d2a;
+  background-color: variables.$background;
+  color: variables.$font-color;
   font-weight: 700;
   margin: 0;
   padding: 0;
@@ -9,6 +9,7 @@
 }
 
 body {
+  background-image: url("path/to/your/image.jpg") !important;
   font-family: "poppins";
   font-weight: 400;
 }
