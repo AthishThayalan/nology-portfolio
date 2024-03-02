@@ -365,7 +365,7 @@ h6 {
     margin-left: 100px;
     width: 100%;
     max-height: 60%;
-    font-size: 17px;
+    font-size: 1.5rem;
   }
   .content__description h2 {
     display: flex;
@@ -388,19 +388,21 @@ h6 {
     width: calc((100% - 150px) / 3);
   }
   .content .projects {
+    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 100px;
-    justify-content: space-evenly;
-  }
-  .footer {
-    width: 104.5%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    padding: 60px;
+    justify-items: center;
+    width: 90%;
   }
 }
+.footer {
+  width: 104.5%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding: 60px;
+}
+
 @media screen and (min-width: 768px) and (max-width: 966px) {
   .nav {
     padding: 30px 5%;
@@ -419,9 +421,6 @@ h6 {
     padding-right: 5%;
     gap: 30px;
   }
-  .content .projects {
-    width: 90%;
-  }
   .footer {
     width: 107%;
     padding: 0 5%;
@@ -430,5 +429,14 @@ h6 {
 @media screen and (min-width: 768px) and (max-width: 1120px) {
   .header__img {
     height: 300px;
+  }
+  .content__description {
+    font-size: 1.3rem;
+  }
+  .content__description .projects__card {
+    background-color: black;
+  }
+  .content .projects {
+    grid-template-columns: repeat(2, 1fr);
   }
 }/*# sourceMappingURL=main.css.map */
