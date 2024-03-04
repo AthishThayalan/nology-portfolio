@@ -39,10 +39,18 @@ h6 {
   margin: 0;
   width: 100%;
   &__container {
-    width: 100%;
+    background-color: variables.$secondary-background;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    .content__h2 {
+      background-color: variables.$secondary-background;
+    }
+    p {
+      background-color: variables.$secondary-background;
+    }
   }
   &__img {
     border-radius: 10px;
@@ -83,6 +91,7 @@ h6 {
     }
   }
   &__description {
+    background-color: variables.$secondary-background;
     margin-top: 40px;
     padding-left: 2px;
     h2 {

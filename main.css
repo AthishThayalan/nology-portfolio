@@ -83,10 +83,18 @@ h6 {
   width: 100%;
 }
 .content__container {
-  width: 100%;
+  background-color: #e9edc9;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
+}
+.content__container .content__h2 {
+  background-color: #e9edc9;
+}
+.content__container p {
+  background-color: #e9edc9;
 }
 .content__img {
   border-radius: 10px;
@@ -126,6 +134,7 @@ h6 {
   }
 }
 .content__description {
+  background-color: #e9edc9;
   margin-top: 40px;
   padding-left: 2px;
 }
@@ -317,7 +326,7 @@ h6 {
     text-decoration: none;
   }
   .nav__item:hover {
-    border: 2px solid #dda15e;
+    border: 2px solid #7f5539;
     transform: scale(1.1);
   }
   .header {
@@ -326,7 +335,6 @@ h6 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px dotted #dda15e;
   }
   .header__welcome {
     width: 60%;
@@ -349,7 +357,8 @@ h6 {
   }
   .content__container {
     height: 100vh;
-    width: 100%;
+    width: 100vw;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -360,6 +369,7 @@ h6 {
     width: calc(40% - 20px);
   }
   .content__description {
+    background-color: #e9edc9;
     display: flex;
     flex-direction: column;
     margin-left: 100px;
@@ -368,10 +378,14 @@ h6 {
     font-size: 1.5rem;
   }
   .content__description h2 {
+    background-color: #e9edc9;
     display: flex;
     margin: 50px;
     text-align: center;
     margin: bottom 100px;
+  }
+  .content__description p {
+    background-color: #e9edc9;
   }
   .content__technical {
     width: 100%;
@@ -388,21 +402,18 @@ h6 {
     width: calc((100% - 150px) / 3);
   }
   .content .projects {
-    border: 2px solid red;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     width: 90%;
   }
+  .footer {
+    width: 104.5%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 60px;
+  }
 }
-.footer {
-  width: 104.5%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 60px;
-}
-
 @media screen and (min-width: 768px) and (max-width: 966px) {
   .nav {
     padding: 30px 5%;
@@ -422,7 +433,7 @@ h6 {
     gap: 30px;
   }
   .footer {
-    width: 107%;
+    width: 107.9%;
     padding: 0 5%;
   }
 }
@@ -438,5 +449,8 @@ h6 {
   }
   .content .projects {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .content .footer {
+    width: 108.2%;
   }
 }/*# sourceMappingURL=main.css.map */

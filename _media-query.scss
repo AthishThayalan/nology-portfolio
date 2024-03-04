@@ -21,7 +21,7 @@
       border-radius: 10px;
       text-decoration: none;
       &:hover {
-        border: 2px solid variables.$secondary-color;
+        border: 2px solid variables.$font-color;
         transform: scale(1.1);
       }
     }
@@ -32,7 +32,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px dotted variables.$secondary-color;
+
     &__welcome {
       width: 60%;
     }
@@ -54,7 +54,8 @@
     }
     &__container {
       height: 100vh;
-      width: 100%;
+      width: 100vw;
+      padding: 20px;
       display: flex;
       flex-direction: row;
       align-items: center;
@@ -66,6 +67,7 @@
     }
 
     &__description {
+      background-color: variables.$secondary-background;
       display: flex;
       flex-direction: column;
       margin-left: 100px;
@@ -73,10 +75,14 @@
       max-height: 60%;
       font-size: 1.5rem;
       h2 {
+        background-color: variables.$secondary-background;
         display: flex;
         margin: 50px;
         text-align: center;
         margin: bottom 100px;
+      }
+      p {
+        background-color: variables.$secondary-background;
       }
     }
     &__technical {
@@ -95,7 +101,6 @@
     }
 
     .projects {
-      border: 2px solid red;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       justify-items: center;
@@ -103,13 +108,12 @@
       width: 90%;
     }
   }
-}
-.footer {
-  width: 104.5%;
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  padding: 60px;
+  .footer {
+    width: 104.5%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 966px) {
@@ -126,6 +130,7 @@
 
   .content {
     width: 100%;
+
     &__technical-grid {
       padding-left: 5%;
       padding-right: 5%;
@@ -134,7 +139,7 @@
   }
 
   .footer {
-    width: 107%;
+    width: 107.9%;
     padding: 0 5%;
   }
 }
@@ -156,6 +161,9 @@
     }
     .projects {
       grid-template-columns: repeat(2, 1fr);
+    }
+    .footer {
+      width: 108.2%;
     }
   }
 }
