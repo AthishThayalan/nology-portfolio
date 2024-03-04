@@ -32,10 +32,10 @@
     <main class="content">
       <div class="content__container" id="about">
         <h2 class="content__h2 scroll-reveal" >About me</h2>
-      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img scroll-reveal" />
+      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img scroll-reveal text-animate-left" />
       <section class="content__description">
         <h2 class="content__h2--desktop scroll-reveal" >About me</h2>
-        <p class ="scroll-reveal" >I'm Athish Thayalan, a First Class, University of Nottingham graduate with a degree in Mathematics and Economics. With the Economics half having a focus on mathematical modeling, statistics, and data analysis, this gave me a taste of coding and has ignited my passion for it. Beyond crunching numbers, I thrive on leveraging them to create innovative tech solutions.</p>
+        <p class ="scroll-reveal text-animate" >I'm Athish Thayalan, a First Class, University of Nottingham graduate with a degree in Mathematics and Economics. With the Economics half having a focus on mathematical modeling, statistics, and data analysis, this gave me a taste of coding and has ignited my passion for it. Beyond crunching numbers, I thrive on leveraging them to create innovative tech solutions.</p>
 
   
 
@@ -105,7 +105,7 @@
           <div class="projects__card-details">
             <h7 class="projects__title">Yelp Camp</h7>
             <p>
-              YelpCamp is a campground review and booking website where users
+              A campground review website where users
               can explore various campsites, read reviews, and make
               reservations. It employs a full-stack web development approach,
               utilizing technologies such as HTML, CSS, and JavaScript for the
@@ -114,7 +114,7 @@
               authentication.
             </p>
             <div class="projects__card-buttons">
-              <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>
+              <a href="https://github.com/AthishThayalan/yelpcamp"><button class="projects__card-button">CODE &lt; / &gt;</button></a>
                <a href="https://yelpcamp-obn9.onrender.com/"><button class="projects__card-button">PREVIEW &lt; / &gt;</button></a>
             </div>
           </div>
@@ -135,40 +135,36 @@
               experiment.
             </p>
             <div class="projects__card-buttons">
-              <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>
+              <a href="https://github.com/AthishThayalan/sorting-algorithm-visualiser"><button class="projects__card-button">CODE &lt; / &gt;</button></a>
                <a href="https://athishthayalan.github.io/sorting-algorithm-visualiser/"><button class="projects__card-button">PREVIEW &lt; / &gt;</button></a>
             </div>
           </div>
         </div>
         <div class="projects__card">
           <img
-            src="./assets/tictactoe.png"
+            src="./assets/meme-generator.png"
             alt="sorting-algo"
             class="projects__card-img"
           />
           <div class="projects__card-details">
-            <h7 class="projects__title">TicTacToe</h7>
-            <p>Classic TicTacToe ! (Or Naughts and Crosses!) X O</p>
+            <h7 class="projects__title">Meme Generator</h7>
+            <p>Craft hilarious memes in seconds! Our Meme Generator project lets users select images, add captions, and customize their creations for instant sharing. Unleash your creativity with ease!</p>
             <div class="projects__card-buttons">
-              <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>
-               <a href=""><button class="projects__card-button">PREVIEW &lt; / &gt;</button></a>
+              <a href="https://github.com/AthishThayalan/meme-generator"><button class="projects__card-button">CODE &lt; / &gt;</button></a>
+               <a href=""><button class="projects__card-button" disabled>PREVIEW &lt; / &gt;</button></a>
             </div>
           </div>
         </div>
         <div class="projects__card">
           <img
-            src="./assets/sortingalgo.png"
+            src="./assets/meme-generator.png"
             alt="sorting-algo"
             class="projects__card-img"
           />
           <div class="projects__card-details">
-            <h7 class="projects__title">Sorting Algorithm Visualiser</h7>
+            <h7 class="projects__title">TicTacToe</h7>
             <p >
-              Welcome to the Sorting Algorithm Visualizer, your interactive
-              platform for exploring and understanding various sorting
-              algorithms. Whether you're a seasoned developer or a newcomer to
-              data structures, this tool offers an engaging way to learn and
-              experiment.
+              Classic TicTacToe ! (Or Naughts and Crosses!) X O
             </p>
             <div class="projects__card-buttons">
               <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>
@@ -276,7 +272,14 @@
       });
       ScrollReveal().reveal('.text-animate', {
         origin: 'right',
-        distance: '100px',
+        distance: '50px',
+        duration: 1000,
+        delay: 200, 
+        easing: 'ease-in-out', 
+      });
+      ScrollReveal().reveal('.text-animate-left', {
+        origin: 'left',
+        distance: '50px',
         duration: 1000,
         delay: 200, 
         easing: 'ease-in-out', 

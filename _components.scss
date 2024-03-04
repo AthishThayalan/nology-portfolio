@@ -38,6 +38,7 @@ h6 {
 .content {
   margin: 0;
   width: 100%;
+
   &__container {
     background-color: variables.$secondary-background;
     width: 100vw;
@@ -91,9 +92,10 @@ h6 {
     }
   }
   &__description {
+    overflow: hidden;
+    width: 90%;
     background-color: variables.$secondary-background;
     margin-top: 40px;
-    padding-left: 2px;
     h2 {
       display: none;
     }
