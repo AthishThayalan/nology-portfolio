@@ -92,7 +92,8 @@ h6 {
     }
   }
   &__description {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
     width: 90%;
     background-color: variables.$secondary-background;
     margin-top: 40px;
@@ -147,7 +148,6 @@ h6 {
       transition: border-color 0.3s;
 
       &:hover {
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
         transform: scale(1.1);
       }
     }
