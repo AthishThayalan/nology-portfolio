@@ -566,4 +566,9 @@ h6 {
     overflow: hidden;
     height: 300px;
   }
+}
+@media screen and (min-width: 333px) and (max-width: 767px) {
+  .footer {
+    width: 100vw;
+  }
 }/*# sourceMappingURL=main.css.map */
