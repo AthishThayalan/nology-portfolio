@@ -13,7 +13,7 @@
       <h6 class="side-nav__header">Portfolio Menu</h6>
       <div class="side-nav__items">
         <a href="#home" class="side-nav__item">Home</a>
-        <a href="#about" class="side-nav__item">About</a>
+        <a href="#about-mobile" class="side-nav__item">About</a>
         <a href="#projects-mobile" class="side-nav__item">Projects</a>
         <a href="#contact" class="side-nav__item">Contact</a>
       </div>
@@ -33,15 +33,15 @@
     <header class="header" id="home">
       <div class="header__welcome">
         <p class = "header__welcome-text"><span class="header__wave">👋</span> Hey! I’m <span class="auto-type"></span></p>
-        <h1 class="auto-type-h1">
+        <h1 class="auto-type-h1" >
           A Junior <span class="header__fancy">Software Developer</span>  based in the UK.
         </h1>
       </div>
-      <div class="header__img">
-        <img src="./assets/computer-dude.svg" alt="" class="text-animate" />
+      <div class="header__img" >
+        <img src="./assets/computer-dude.svg" alt="" class="text-animate"  />
       </div>
     </header>
-    <main class="content">
+    <main class="content" id="about-mobile">
       <div class="content__container" id="about">
         <h2 class="content__h2 scroll-reveal" >About me </h2>
         
@@ -55,10 +55,10 @@
       </div>
       
       </section>
-      <section class="content__technical scroll-reveal"   >
+      <section class="content__technical scroll-reveal"  >
         <h3>Technical Skills</h3>
-        <p >My skill set includes but is not limited to</p>
-        <section  class="content__technical-grid" id="projects"   >
+        <p  >My skill set includes but is not limited to</p>
+        <section  class="content__technical-grid" id="projects"    >
           <div class="content__technology" >
             <!-- Spring Boot  -->
             <img src="./assets/spring.png" alt="Spring Boot Icon" />
@@ -86,12 +86,12 @@
           </div>
           <div class="content__technology">
             <!-- JavaScript -->
-            <img src="./assets/js.png" alt="JavaScript Icon" />
+            <img src="./assets/js.png" alt="JavaScript Icon"  />
             <h4>JavaScript</h4>
           </div>
           <div class="content__technology">
             <!-- CSS3 -->
-            <img src="./assets/css.png" alt="CSS3 Icon" />
+            <img src="./assets/css.png" alt="CSS3 Icon" id="projects-mobile" />
             <h4>CSS3</h4>
             
           </div>
@@ -103,7 +103,7 @@
           <div class="content__technology">
             <!-- Git -->
             <img src="./assets/git.png" alt="Git Icon" />
-            <h4 id="projects-mobile" >Git</h4>
+            <h4 >Git</h4>
           </div>
         </>
       </section>
@@ -156,7 +156,7 @@
         <div class="projects__card">
           <img
             src="./assets/flappy-bird.png"
-            alt="sorting-algo"
+            alt="flappy-bird"
             class="projects__card-img"
           />
           <div class="projects__card-details">
@@ -173,7 +173,7 @@
         <div class="projects__card">
           <img
             src="./assets/meme-generator.png"
-            alt="sorting-algo"
+            alt="weather"
             class="projects__card-img"
           />
           <div class="projects__card-details">
@@ -188,18 +188,14 @@
        
         <div class="projects__card">
           <img
-            src="./assets/sortingalgo.png"
-            alt="sorting-algo"
+            src="./assets/snake.png"
+            alt="snake"
             class="projects__card-img"
           />
           <div class="projects__card-details">
-            <h7 class="projects__title">Sorting Algorithm Visualiser</h7>
+            <h7 class="projects__title">Snake Game</h7>
             <p >
-              Welcome to the Sorting Algorithm Visualizer, your interactive
-              platform for exploring and understanding various sorting
-              algorithms. Whether you're a seasoned developer or a newcomer to
-              data structures, this tool offers an engaging way to learn and
-              experiment.
+              The Snake game project is a classic arcade-style game developed using Python and the Turtle graphics library. Serving as a demonstration of my Python programming skills and game development proficiency, this project showcases an engaging and interactive gaming experience.
             </p>
             <div class="projects__card-buttons">
               <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>
@@ -209,18 +205,14 @@
         </div>
         <div class="projects__card">
           <img
-            src="./assets/sortingalgo.png"
+            src="./assets/weather-app.png"
             alt="sorting-algo"
             class="projects__card-img"
           />
           <div class="projects__card-details">
-            <h7 class="projects__title">Sorting Algorithm Visualiser</h7>
+            <h7 class="projects__title">Weather App</h7>
             <p >
-              Welcome to the Sorting Algorithm Visualizer, your interactive
-              platform for exploring and understanding various sorting
-              algorithms. Whether you're a seasoned developer or a newcomer to
-              data structures, this tool offers an engaging way to learn and
-              experiment. 
+              The weather application is a user-friendly and intuitive software solution designed to provide accurate and up-to-date weather information to users. Developed as part of my portfolio, this project demonstrates my proficiency in software development.
             </p>
             <div class="projects__card-buttons">
               <a href=""><button class="projects__card-button">CODE &lt; / &gt;</button></a>

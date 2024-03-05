@@ -75,10 +75,14 @@ h6 {
 }
 
 .mobile-nav {
+  position: sticky;
+  top: 0;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
   z-index: 999;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 
   img {
     padding: 1px;
@@ -110,12 +114,13 @@ h6 {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    height: 100vh;
+    height: 114vh;
     .content__coffee {
       display: none;
     }
     .content__h2 {
       background-color: variables.$secondary-background;
+      margin-top: 50px;
     }
     p {
       background-color: variables.$secondary-background;
