@@ -9,20 +9,32 @@
   </head>
 
   <body>
+    <nav class="side-nav">
+      <h6 class="side-nav__header"> &lt; Athish Thayalan / &gt</h6>
+      <div class="side-nav__items">
+        <a href="#home" class="side-nav__item">Home</a>
+        <a href="#about" class="side-nav__item">About</a>
+        <a href="#projects" class="side-nav__item">Projects</a>
+        <a href="#contact" class="side-nav__item">Get in touch</a>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <img src="./assets/menu-icon.png" alt="menu" id = "menu">
+    </nav>
     <nav class="nav">
       <h6 class="nav__header"> &lt; Athish Thayalan / &gt</h6>
       <div class="nav__items">
-        <a href="./index.html" class="nav__item">Home</a>
+        <a href="#home" class="nav__item">Home</a>
         <a href="#about" class="nav__item">About</a>
         <a href="#projects" class="nav__item">Projects</a>
         <a href="#contact" class="nav__item">Get in touch</a>
       </div>
     </nav>
-    <header class="header">
+    <header class="header" id="home">
       <div class="header__welcome">
         <p class = "header__welcome-text"><span class="header__wave">👋</span> Hey! I’m <span class="auto-type"></span></p>
         <h1 class="auto-type-h1">
-          A Junior <span class="fancy">Software Developer</span>  based in the UK.
+          A Junior <span class="header__fancy">Software Developer</span>  based in the UK.
         </h1>
       </div>
       <div class="header__img">
@@ -31,22 +43,23 @@
     </header>
     <main class="content">
       <div class="content__container" id="about">
-        <h2 class="content__h2 scroll-reveal" >About me</h2>
-      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img scroll-reveal text-animate-left" />
+        <h2 class="content__h2 scroll-reveal" >About me </h2>
+        
+      <img src="./assets/me-cropped.jpg" alt="Me" class="content__img scroll-reveal" />
       <section class="content__description">
         <h2 class="content__h2--desktop scroll-reveal" >About me</h2>
-        <p class ="scroll-reveal text-animate" >I'm Athish Thayalan, a First Class, University of Nottingham graduate with a degree in Mathematics and Economics. With the Economics half having a focus on mathematical modeling, statistics, and data analysis, this gave me a taste of coding and has ignited my passion for it. Beyond crunching numbers, I thrive on leveraging them to create innovative tech solutions.</p>
-
+        <p class ="scroll-reveal" >I'm Athish Thayalan, a First Class, University of Nottingham graduate with a degree in Mathematics and Economics. With the Economics half having a focus on mathematical modeling, statistics, and data analysis, this gave me a taste of coding and has ignited my passion for it.  Beyond crunching numbers, I thrive on leveraging them to create innovative tech solutions.</p>
+        <img src="./assets/coffee.gif" alt="" class="content__coffee">
   
 
       </div>
       
       </section>
-      <section class="content__technical scroll-reveal">
-        <h3 >Technical Skills</h3>
-        <p>My skill set includes but is not limited to :</p>
-        <div class="content__technical-grid" id="projects">
-          <div class="content__technology">
+      <section class="content__technical scroll-reveal" id="projects"  >
+        <h3 id = "projects" >Technical Skills</h3>
+        <p >My skill set includes but is not limited to :</p>
+        <section class="content__technical-grid" >
+          <div class="content__technology" >
             <!-- Spring Boot  -->
             <img src="./assets/spring.png" alt="Spring Boot Icon" />
             <h4>Spring Boot</h4>
@@ -92,9 +105,9 @@
             <img src="./assets/git.png" alt="Git Icon" />
             <h4>Git</h4>
           </div>
-        </div>
+        </>
       </section>
-      <h6 >My Projects</h6>
+      <h6  >My Projects</h6>
       <section class="projects scroll-reveal">
         <div class="projects__card ">
           <img
@@ -217,8 +230,8 @@
         
       </section>
 
-      <footer class="footer" id="contact">
-        <div class="footer__icons">
+      <footer class="footer" id="contact" >
+        <div class="footer__icons" >
           <a href="https://github.com/AthishThayalan" target="_blank">
             <img
               src="./assets/github.svg.svg"
@@ -264,26 +277,42 @@
       });
       ScrollReveal().reveal('.scroll-reveal', {
         delay: 200,
-        distance: '50px',
+        distance: '100px',
         duration: 1000,
         easing: 'ease-in-out',
         origin: 'bottom',
         reset: true
       });
-      ScrollReveal().reveal('.text-animate', {
-        origin: 'right',
-        distance: '100px',
-        duration: 1000,
-        delay: 200, 
-        easing: 'ease-in-out', 
+      document.addEventListener('DOMContentLoaded', function() {
+        const links = document.querySelectorAll('a[href^="#"]');
+        
+        links.forEach(link => {
+          link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+            
+            if (targetElement) {
+              const offsetTop = targetElement.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
       });
-      ScrollReveal().reveal('.text-animate-left', {
-        origin: 'left',
-        distance: '100px',
-        duration: 1000,
-        delay: 200, 
-        easing: 'ease-in-out', 
-      });
+      const menuIcon = document.getElementById("menu");
+      const sideNav = document.querySelector('.side-nav');
+      menuIcon.addEventListener("click",()=>{
+        
+        console.log("hello")
+        sideNav.classList.toggle("side-nav--open")
+
+      })
+
+
+       
     </script>
   </body>
 </html>
