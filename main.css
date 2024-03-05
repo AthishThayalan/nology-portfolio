@@ -69,6 +69,7 @@ h6 {
   background-color: #7f5539;
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
   position: fixed;
@@ -76,7 +77,7 @@ h6 {
   left: -260px;
   width: 250px;
   height: 110vh;
-  padding-top: 60px;
+  padding-top: 40px;
   z-index: 1000;
   overflow-y: auto;
   transition: left 0.3s ease;
@@ -85,6 +86,7 @@ h6 {
 .side-nav h6 {
   font-size: 1.2rem;
   color: rgb(91, 61, 42);
+  border-bottom: 1px dotted beige;
 }
 .side-nav--open {
   left: 0;
@@ -99,11 +101,11 @@ h6 {
 .side-nav__items {
   background-color: #7f5539;
   list-style-type: none;
-  height: 80%;
+  height: 70%;
   padding: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-start;
   margin-bottom: -1px;
 }
