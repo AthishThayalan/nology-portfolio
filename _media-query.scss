@@ -28,7 +28,8 @@
       border-radius: 10px;
       text-decoration: none;
       &:hover {
-        border: 2px solid variables.$font-color;
+        color: beige;
+        background-color: #555;
         transform: scale(1.1);
       }
     }
@@ -186,7 +187,7 @@
       grid-template-columns: repeat(2, 1fr);
     }
     .footer {
-      width: 106.4%;
+      width: 108.5%;
     }
   }
 }
@@ -199,6 +200,11 @@
   .content {
     &__description {
       font-size: 14px;
+    }
+    &__technical {
+      p {
+        font-size: 0.8rem;
+      }
     }
     .footer {
       width: 100%;

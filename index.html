@@ -14,8 +14,8 @@
       <div class="side-nav__items">
         <a href="#home" class="side-nav__item">Home</a>
         <a href="#about" class="side-nav__item">About</a>
-        <a href="#projects" class="side-nav__item">Projects</a>
-        <a href="#contact" class="side-nav__item">Get in touch</a>
+        <a href="#projects-mobile" class="side-nav__item">Projects</a>
+        <a href="#contact" class="side-nav__item">Contact</a>
       </div>
     </nav>
     <nav class="mobile-nav">
@@ -27,7 +27,7 @@
         <a href="#home" class="nav__item">Home</a>
         <a href="#about" class="nav__item">About</a>
         <a href="#projects" class="nav__item">Projects</a>
-        <a href="#contact" class="nav__item">Get in touch</a>
+        <a href="#contact" class="nav__item">Get In Touch</a>
       </div>
     </nav>
     <header class="header" id="home">
@@ -55,10 +55,10 @@
       </div>
       
       </section>
-      <section class="content__technical scroll-reveal" id="projects"  >
-        <h3 id = "projects" >Technical Skills</h3>
-        <p >My skill set includes but is not limited to :</p>
-        <section class="content__technical-grid" >
+      <section class="content__technical scroll-reveal"   >
+        <h3>Technical Skills</h3>
+        <p >My skill set includes but is not limited to</p>
+        <section  class="content__technical-grid" id="projects"   >
           <div class="content__technology" >
             <!-- Spring Boot  -->
             <img src="./assets/spring.png" alt="Spring Boot Icon" />
@@ -103,11 +103,11 @@
           <div class="content__technology">
             <!-- Git -->
             <img src="./assets/git.png" alt="Git Icon" />
-            <h4>Git</h4>
+            <h4 id="projects-mobile" >Git</h4>
           </div>
         </>
       </section>
-      <h6  >My Projects</h6>
+      <h6 >My Projects</h6>
       <section class="projects scroll-reveal">
         <div class="projects__card ">
           <img
@@ -229,8 +229,9 @@
         </div>
         
       </section>
+      <div ></div>
 
-      <footer class="footer" id="contact" >
+      <footer class="footer" id="contact">
         <div class="footer__icons" >
           <a href="https://github.com/AthishThayalan" target="_blank">
             <img
@@ -283,36 +284,21 @@
         origin: 'bottom',
         reset: true
       });
-      document.addEventListener('DOMContentLoaded', function() {
-        const links = document.querySelectorAll('a[href^="#"]');
-        
-        links.forEach(link => {
-          link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-              const offsetTop = targetElement.offsetTop;
-              window.scrollTo({
-                top: offsetTop,
-                behavior: 'smooth'
-              });
-            }
-          });
-        });
-      });
+      
       const menuIcon = document.getElementById("menu");
       const sideNav = document.querySelector('.side-nav');
       menuIcon.addEventListener("click",()=>{
         
         console.log("hello")
-        sideNav.classList.toggle("side-nav--open")
+        sideNav.classList.toggle("side-nav--open");
+        document.addEventListener('click', function(event) {
+          if (!sideNav.contains(event.target) && event.target !== menuIcon) {
+              sideNav.classList.remove("side-nav--open");
+          }
+      });
+        
 
       })
-
-
-       
     </script>
   </body>
 </html>
