@@ -86,7 +86,6 @@ h6 {
 .side-nav h6 {
   font-size: 1.2rem;
   color: rgb(91, 61, 42);
-  border-bottom: 1px dotted beige;
 }
 .side-nav--open {
   left: 0;
