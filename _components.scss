@@ -40,6 +40,7 @@ h6 {
   h6 {
     font-size: 0.9rem;
     color: rgb(248, 168, 118);
+    opacity: 0.3;
   }
   &--open {
     left: 0;
@@ -60,9 +61,8 @@ h6 {
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
-  margin-bottom: -1px;
 }
 
 .side-nav__item {
@@ -287,7 +287,7 @@ h6 {
   justify-content: space-evenly;
   align-items: center;
   z-index: 1000;
-  background-color: #333;
+  background-color: variables.$nav-color;
   color: white;
   padding: 20px;
   width: 114%;
