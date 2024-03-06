@@ -216,7 +216,7 @@ h6 {
   display: none;
 }
 .content__description p {
-  font-size: 1.2rem;
+  font-size: 0.95rem;
 }
 .content__technical {
   display: flex;
@@ -479,6 +479,7 @@ h6 {
   }
   .content__description p {
     background-color: #f4f8d4;
+    font-size: 1.15rem;
   }
   .content__technical {
     width: 100%;
@@ -587,5 +588,10 @@ h6 {
 @media screen and (min-width: 320px) and (max-width: 540px) {
   .content__description {
     font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content__description p {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */
