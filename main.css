@@ -580,4 +580,9 @@ h6 {
   .footer {
     width: 100vw;
   }
+}
+@media screen and (min-width: 320px) and (max-width: 540px) {
+  .content__description {
+    font-size: 0.9rem;
+  }
 }/*# sourceMappingURL=main.css.map */
