@@ -95,9 +95,9 @@
       font-size: 1.5rem;
       h2 {
         background-color: variables.$secondary-background;
-        display: flex;
+        display: block;
         margin: 50px;
-        text-align: center;
+        text-align: start;
         margin: bottom 100px;
       }
       p {

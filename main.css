@@ -216,7 +216,7 @@ h6 {
   display: none;
 }
 .content__description p {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
 }
 .content__technical {
   display: flex;
@@ -472,9 +472,9 @@ h6 {
   }
   .content__description h2 {
     background-color: #f4f8d4;
-    display: flex;
+    display: block;
     margin: 50px;
-    text-align: center;
+    text-align: start;
     margin: bottom 100px;
   }
   .content__description p {
