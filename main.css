@@ -159,14 +159,13 @@ h6 {
   flex-direction: column;
   align-items: center;
   padding: 10px;
-  height: 114vh;
+  height: 105vh;
 }
 .content__container .content__coffee {
   display: none;
 }
 .content__container .content__h2 {
   background-color: #e9edc9;
-  margin-top: 50px;
 }
 .content__container p {
   background-color: #e9edc9;
@@ -211,7 +210,7 @@ h6 {
 .content__description {
   width: 100%;
   background-color: #e9edc9;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .content__description h2 {
   display: none;
