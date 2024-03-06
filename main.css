@@ -91,13 +91,11 @@ h6 {
 .side-nav--open {
   left: 0;
 }
-
 .side-nav__header {
   background-color: rgb(49, 42, 42);
   padding: 10px;
   margin-bottom: 20px;
 }
-
 .side-nav__items {
   background-color: rgb(49, 42, 42);
   list-style-type: none;
@@ -109,8 +107,7 @@ h6 {
   justify-content: space-evenly;
   align-items: flex-start;
 }
-
-.side-nav__item {
+.side-nav__items .side-nav__item {
   display: flex;
   border-bottom: 6px solid #915d3b;
   background-color: rgb(49, 42, 42);

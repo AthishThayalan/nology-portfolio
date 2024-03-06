@@ -45,33 +45,31 @@ h6 {
   &--open {
     left: 0;
   }
-}
+  &__header {
+    background-color: variables.$nav-color;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
 
-.side-nav__header {
-  background-color: variables.$nav-color;
-  padding: 10px;
-  margin-bottom: 20px;
-}
-
-.side-nav__items {
-  background-color: variables.$nav-color;
-  list-style-type: none;
-  height: 70%;
-  padding: 0;
-  padding-left: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
-}
-
-.side-nav__item {
-  display: flex;
-  border-bottom: 6px solid #915d3b;
-  background-color: variables.$nav-color;
-  text-decoration: none;
-  color: #fff;
-  transition: background-color 0.3s ease;
+  &__items {
+    background-color: variables.$nav-color;
+    list-style-type: none;
+    height: 70%;
+    padding: 0;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .side-nav__item {
+      display: flex;
+      border-bottom: 6px solid #915d3b;
+      background-color: variables.$nav-color;
+      text-decoration: none;
+      color: #fff;
+      transition: background-color 0.3s ease;
+    }
+  }
 }
 
 .mobile-nav {
