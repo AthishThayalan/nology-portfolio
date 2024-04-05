@@ -155,12 +155,29 @@
         </div>
         <div class="projects__card">
           <img
-            src="./assets/flappy-bird.png"
+            src="./assets/punk-api.png"
             alt="flappy-bird"
             class="projects__card-img"
           />
           <div class="projects__card-details">
-            <h7 class="projects__title">Flappy Bird Clone</h7>
+            <h7 class="projects__title">PUNK API</h7>
+            <p >
+              Explore the fascinating world of craft beers with our PUNK API project.Dive into detailed beer information, including names, taglines, descriptions, and ABV levels. Whether you're a seasoned beer enthusiast or just starting your craft beer journey, our project offers an engaging platform to explore and learn about unique brews. Cheers to discovering your new favorite beer!
+            </p>
+            <div class="projects__card-buttons">
+              <a href="https://github.com/AthishThayalan/punkapi"><button class="projects__card-button">CODE &lt; / &gt;</button></a>
+               <a href="https://athishthayalan.github.io/punkapi/"><button class="projects__card-button">PREVIEW &lt; / &gt;</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="projects__card">
+          <img
+            src="./assets/punk-api.png"
+            alt="flappy-bird"
+            class="projects__card-img"
+          />
+          <div class="projects__card-details">
+            <h7 class="projects__title">PUNK API</h7>
             <p >
               Leveraged HTML, CSS, and JavaScript to create an addictive Flappy Bird clone, complete with intuitive controls and dynamic obstacle generation. Through meticulous design and implementation, the game offers players a challenging yet satisfying experience, showcasing my dedication to crafting engaging web applications.
             </p>
@@ -170,6 +187,7 @@
             </div>
           </div>
         </div>
+        
         <div class="projects__card">
           <img
             src="./assets/meme-generator.png"
@@ -282,7 +300,6 @@
       const sideNav = document.querySelector('.side-nav');
       menuIcon.addEventListener("click",()=>{
         
-        console.log("hello")
         sideNav.classList.toggle("side-nav--open");
         document.addEventListener('click', function(event) {
           if (!sideNav.contains(event.target) && event.target !== menuIcon) {
